@@ -1,55 +1,56 @@
-// GSAP Animations
+// GSAP Animations with ScrollTrigger
 
-// Floating Element Animation
-gsap.to(".floating-element", {
-    duration: 10,
-    x: 100,
-    repeat: -1,
-    yoyo: true,
-    ease: "power1.inOut"
-});
+gsap.registerPlugin(ScrollTrigger);
 
-// Home Section Animation
-gsap.from("#home .content", {
+// Animate header text when scrolled into view
+gsap.from("header h1", {
+    opacity: 0,
+    y: -100,
     duration: 1.5,
-    opacity: 0,
-    y: 50,
-    ease: "power4.out"
+    scrollTrigger: {
+        trigger: "header h1",
+        start: "top center",
+        toggleActions: "play reverse play reverse"
+    }
 });
 
-// Skills Section Animation
-gsap.from(".skill", {
-    scrollTrigger: "#skills",
-    duration: 1,
-    opacity: 0,
-    scale: 0.5,
-    stagger: 0.2,
-    ease: "power3.out"
-});
-
-// Projects Section Animation
-gsap.from(".card", {
-    scrollTrigger: "#projects",
-    duration: 1,
-    opacity: 0,
+// About Section Animation
+gsap.from("#about h2", {
     x: -100,
-    stagger: 0.2,
-    ease: "power3.out"
-});
-
-// Contact Form Animation
-gsap.from("#contact form", {
-    scrollTrigger: "#contact",
-    duration: 1.5,
     opacity: 0,
-    scale: 0.8,
-    ease: "elastic.out(1, 0.3)"
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse"
+    }
 });
 
-// Mobile Menu Toggle
-const menu = document.getElementById('mobile-menu');
-const navList = document.getElementById('nav-list');
+gsap.from("#about p", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse"
+    }
+});
 
-menu.addEventListener('click', () => {
-    navList.classList.toggle('active');
+// Horizontal Project Section Animation
+gsap.from(".project", {
+    opacity: 0,
+    x: 100,
+    stagger: 0.3,
+    scrollTrigger: {
+        trigger: ".project-container",
+        start: "top 85%",
+        toggleActions: "play reverse play reverse"
+    }
+});
+
+// Accessibility Enhancements
+document.querySelectorAll('a').forEach(link => {
+    link.setAttribute('tabindex', '0');
+    link.setAttribute('role', 'link');
 });
