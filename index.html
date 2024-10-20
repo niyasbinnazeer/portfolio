@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Resume</title>
+    <title>Creative Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation with Hamburger Menu -->
     <nav>
-        <ul>
+        <div class="logo">MyResume</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list" id="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -27,17 +29,20 @@
     <!-- Home Section -->
     <section id="home">
         <div class="content">
-            <h1>Hi, I'm John Doe</h1>
-            <p>A passionate eLearning Developer & Instructional Designer</p>
+            <h1>I'm <span class="highlight">John Doe</span></h1>
+            <p>A Creative eLearning Developer</p>
             <a href="#about" class="cta-button">Learn More</a>
         </div>
+        <!-- Random floating elements for creativity -->
+        <div class="floating-element"></div>
+        <div class="floating-element delay"></div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <div class="content">
             <h2>About Me</h2>
-            <p>I specialize in creating interactive and engaging eLearning experiences. With several years of experience in instructional design and Articulate Storyline, I bring complex ideas to life through effective training solutions.</p>
+            <p>I specialize in creating interactive, engaging eLearning solutions with a creative approach. My goal is to bring ideas to life through innovative design and custom-built learning experiences.</p>
         </div>
     </section>
 
@@ -48,37 +53,18 @@
             <div class="skills-grid">
                 <div class="skill">
                     <i class="fas fa-laptop-code"></i>
-                    <h3>eLearning Development</h3>
-                    <p>Expert in developing interactive eLearning content using Articulate Storyline, Adobe Captivate, and more.</p>
+                    <h3>Development</h3>
+                    <p>Proficient in eLearning development with tools like Articulate Storyline and Adobe Captivate.</p>
                 </div>
                 <div class="skill">
                     <i class="fas fa-project-diagram"></i>
-                    <h3>Project Management</h3>
-                    <p>Experienced in managing instructional design projects from conception to deployment.</p>
+                    <h3>Design</h3>
+                    <p>Expertise in visual and instructional design, ensuring engaging learning experiences.</p>
                 </div>
                 <div class="skill">
                     <i class="fas fa-code"></i>
-                    <h3>JavaScript & HTML5</h3>
-                    <p>Proficient in adding custom interactivity using JavaScript and creating responsive designs with HTML5 and CSS.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="content">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>eLearning Developer - XYZ Corp</h3>
-                    <span>2018 - Present</span>
-                    <p>Developed interactive courses for corporate clients, utilizing Articulate Storyline to deliver engaging, SCORM-compliant training solutions.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Instructional Designer - ABC Learning</h3>
-                    <span>2015 - 2018</span>
-                    <p>Created instructional design strategies for online training, including developing storyboards and collaborating with SMEs.</p>
+                    <h3>Custom Coding</h3>
+                    <p>Skilled in adding custom interactivity using JavaScript, CSS, and HTML5.</p>
                 </div>
             </div>
         </div>
@@ -90,27 +76,16 @@
             <h2>Projects</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="https://source.unsplash.com/300x200/?education" alt="Project 1">
-                    <h3>Corporate Compliance Training</h3>
-                    <p>Developed a highly interactive compliance training for employees of a multinational corporation.</p>
+                    <img src="https://source.unsplash.com/300x200/?creative" alt="Project 1">
+                    <h3>Creative Compliance Training</h3>
+                    <p>A highly engaging, scenario-based training module designed for corporate employees.</p>
                 </div>
                 <div class="card">
-                    <img src="https://source.unsplash.com/300x200/?learning" alt="Project 2">
-                    <h3>Soft Skills Training Program</h3>
-                    <p>Designed a soft skills eLearning course using engaging scenario-based interactions.</p>
+                    <img src="https://source.unsplash.com/300x200/?skills" alt="Project 2">
+                    <h3>Interactive Soft Skills Program</h3>
+                    <p>Designed a soft skills training course using interactive, immersive elements.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="content">
-            <h2>Education</h2>
-            <ul class="education-list">
-                <li><strong>Master's in Educational Technology</strong> - XYZ University (2015)</li>
-                <li><strong>Bachelor's in Computer Science</strong> - ABC College (2012)</li>
-            </ul>
         </div>
     </section>
 
@@ -118,7 +93,7 @@
     <section id="contact">
         <div class="content">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out for any opportunities or collaborations.</p>
+            <p>I'd love to collaborate on your next project! Reach out to discuss more.</p>
             <form action="https://formspree.io/f/{your-form-id}" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
