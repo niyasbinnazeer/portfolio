@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My eLearning Portfolio</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -23,9 +27,9 @@
     <!-- Home Section -->
     <section id="home">
         <div class="content">
-            <h1>Welcome to My eLearning Portfolio</h1>
-            <p>Explore my projects and learning experiences</p>
-            <a href="#portfolio" class="cta-button">View My Work</a>
+            <h1>Hi, I'm John Doe</h1>
+            <p>A passionate eLearning Developer & Instructional Designer</p>
+            <a href="#about" class="cta-button">Learn More</a>
         </div>
     </section>
 
@@ -33,36 +37,80 @@
     <section id="about">
         <div class="content">
             <h2>About Me</h2>
-            <p>Hi! I'm an eLearning developer with expertise in Articulate Storyline and instructional design. I create engaging and interactive learning experiences to help learners grow and succeed.</p>
+            <p>I specialize in creating interactive and engaging eLearning experiences. With several years of experience in instructional design and Articulate Storyline, I bring complex ideas to life through effective training solutions.</p>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+    <!-- Skills Section -->
+    <section id="skills">
         <div class="content">
-            <h2>My Portfolio</h2>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>eLearning Development</h3>
+                    <p>Expert in developing interactive eLearning content using Articulate Storyline, Adobe Captivate, and more.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Project Management</h3>
+                    <p>Experienced in managing instructional design projects from conception to deployment.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>JavaScript & HTML5</h3>
+                    <p>Proficient in adding custom interactivity using JavaScript and creating responsive designs with HTML5 and CSS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="content">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>eLearning Developer - XYZ Corp</h3>
+                    <span>2018 - Present</span>
+                    <p>Developed interactive courses for corporate clients, utilizing Articulate Storyline to deliver engaging, SCORM-compliant training solutions.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Instructional Designer - ABC Learning</h3>
+                    <span>2015 - 2018</span>
+                    <p>Created instructional design strategies for online training, including developing storyboards and collaborating with SMEs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="content">
+            <h2>Projects</h2>
             <div class="grid">
                 <div class="card">
                     <img src="https://source.unsplash.com/300x200/?education" alt="Project 1">
-                    <h3>Project Title 1</h3>
-                    <p>A short description of this eLearning project. <a href="#">View Demo</a></p>
+                    <h3>Corporate Compliance Training</h3>
+                    <p>Developed a highly interactive compliance training for employees of a multinational corporation.</p>
                 </div>
                 <div class="card">
                     <img src="https://source.unsplash.com/300x200/?learning" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>A short description of this eLearning project. <a href="#">View Demo</a></p>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/300x200/?online-learning" alt="Project 3">
-                    <h3>Project Title 3</h3>
-                    <p>A short description of this eLearning project. <a href="#">View Demo</a></p>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/300x200/?training" alt="Project 4">
-                    <h3>Project Title 4</h3>
-                    <p>A short description of this eLearning project. <a href="#">View Demo</a></p>
+                    <h3>Soft Skills Training Program</h3>
+                    <p>Designed a soft skills eLearning course using engaging scenario-based interactions.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="content">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li><strong>Master's in Educational Technology</strong> - XYZ University (2015)</li>
+                <li><strong>Bachelor's in Computer Science</strong> - ABC College (2012)</li>
+            </ul>
         </div>
     </section>
 
@@ -82,7 +130,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My eLearning Portfolio</p>
+        <p>&copy; 2024 John Doe - All Rights Reserved</p>
     </footer>
 
     <!-- GSAP CDN -->
