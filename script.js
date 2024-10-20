@@ -1,56 +1,123 @@
-// GSAP Animations with ScrollTrigger
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-gsap.registerPlugin(ScrollTrigger);
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-// Animate header text when scrolled into view
-gsap.from("header h1", {
-    opacity: 0,
-    y: -100,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "header h1",
-        start: "top center",
-        toggleActions: "play reverse play reverse"
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+#about, #skills, #experience, #projects, #contact {
+    background-color: #fff;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+}
+
+#about h2, #skills h2, #experience h2, #projects h2, #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#about p, #skills ul, #experience div, #projects div {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Horizontal Portfolio Section */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    gap: 30px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Gradient backgrounds for sections */
+#skills, #experience, #projects {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    color: white;
+}
+
+/* Smooth scrolling and responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
     }
-});
 
-// About Section Animation
-gsap.from("#about h2", {
-    x: -100,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#about",
-        start: "top 80%",
-        toggleActions: "play reverse play reverse"
+    .project-container {
+        flex-direction: column;
     }
-});
 
-gsap.from("#about p", {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#about",
-        start: "top 80%",
-        toggleActions: "play reverse play reverse"
+    .project {
+        margin-bottom: 30px;
+        min-width: 100%;
     }
-});
-
-// Horizontal Project Section Animation
-gsap.from(".project", {
-    opacity: 0,
-    x: 100,
-    stagger: 0.3,
-    scrollTrigger: {
-        trigger: ".project-container",
-        start: "top 85%",
-        toggleActions: "play reverse play reverse"
-    }
-});
-
-// Accessibility Enhancements
-document.querySelectorAll('a').forEach(link => {
-    link.setAttribute('tabindex', '0');
-    link.setAttribute('role', 'link');
-});
+}
