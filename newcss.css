@@ -1096,7 +1096,7 @@ img {
     text-align: initial;
   }
   .about__info {
-    justify-content: space-between;
+    justify-content: center;
   }
   .about__buttons {
     justify-content: center;
@@ -1126,7 +1126,7 @@ img {
     justify-content: center;
   }
   .services__content {
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 0 0 2rem 2.5rem;
   }
   .services__icon {
     font-size: 2rem;
