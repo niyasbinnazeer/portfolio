@@ -404,7 +404,8 @@ img {
 
 .about__info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center; /* Centers the items horizontally */
+  gap: 10px; /* Controls the space between the items */
   margin-bottom: var(--mb-2-5);
 }
 
