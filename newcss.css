@@ -1099,7 +1099,7 @@ img {
     justify-content: space-between;
   }
   .about__buttons {
-    justify-content: initial;
+    justify-content: center;
   }
 
   .skills__icon,
