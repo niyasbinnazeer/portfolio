@@ -1097,6 +1097,7 @@ img {
   }
   .about__info {
     justify-content: center;
+    gap: 10px;
   }
   .about__buttons {
     justify-content: center;
