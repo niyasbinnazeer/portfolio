@@ -510,21 +510,45 @@ img {
 .skills__adapt {
   width: 50%;
 }
-.skills__firebase {
-  width: 75%;
+.skills__photoshop {
+  width: 80%;
 }
-.skills__python {
+.skills__illustrator {
   width: 50%;
 }
 
-.skills__figma {
-  width: 85%;
+.skills__indesign {
+  width: 30%;
 }
-.skills__sketch {
-  width: 75%;
-}
-.skills__photoshop {
+.skills__affinity1 {
   width: 60%;
+}
+.skills__affinity2 {
+  width: 60%;
+}
+.skills__msoffice {
+  width: 90%;
+}
+.skills__vyond {
+  width: 60%;
+}
+.skills__aftereffects {
+  width: 50%;
+}
+.skills__premierepro {
+  width: 50%;
+}
+.skills__audition {
+  width: 50%;
+}
+.skills__vegaspro {
+  width: 50%;
+}
+.skills__audacity {
+  width: 50%;
+}
+.skills__flash {
+  width: 30%;
 }
 
 .skills__close .skills__list {
