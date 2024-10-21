@@ -602,6 +602,7 @@ img {
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
 }
 
 .qualification__calender {
@@ -629,13 +630,13 @@ img {
   display: none;
 }
 
-.qualification__active[data-content] {
+/* .qualification__active[data-content] {
   display: none;
 }
 
 .qualification__button.qualification__active {
   color: var(--first-color);
-}
+} */
 
 /*================= Services ==================*/
 
