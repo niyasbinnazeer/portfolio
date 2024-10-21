@@ -567,7 +567,13 @@ img {
 
 /*==================== Qualifications ====================*/
 
-.qualification__tabs {
+.qualification__tabs1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__tabs2 {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2);
@@ -1103,9 +1109,13 @@ img {
   .qualification__button {
     margin: 0 var(--mb-1);
   }
-  .qualification__sections {
+  .qualification__sections1 {
     grid-template-columns: 0.5fr;
   }
+.qualification__sections2 {
+    grid-template-columns: 0.5fr;
+  }
+  
   .services_container {
     grid-template-columns: repeat(3, 218px);
     justify-content: center;
