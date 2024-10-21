@@ -585,9 +585,9 @@ img {
   cursor: pointer;
 }
 
-.qualification__button:hover {
+/* .qualification__button:hover {
   color: var(--first-color);
-}
+} */
 
 .qualification__icon {
   font-size: 1.8rem;
