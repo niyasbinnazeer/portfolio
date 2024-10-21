@@ -491,24 +491,24 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+.skills__storyline {
   width: 90%;
 }
-.skills__css {
-  width: 80%;
+.skills__rise {
+  width: 90%;
 }
-.skills__js {
-  width: 55%;
+.skills__evolve {
+  width: 75%;
 }
-.skills__react {
-  width: 40%;
+.skills__gmetri {
+  width: 75%;
 }
 
-.skills__php {
-  width: 80%;
+.skills__captivate {
+  width: 60%;
 }
-.skills__node {
-  width: 70%;
+.skills__adapt {
+  width: 50%;
 }
 .skills__firebase {
   width: 75%;
