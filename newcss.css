@@ -1111,6 +1111,7 @@ img {
   }
   .qualification__sections1 {
     grid-template-columns: 0.5fr;
+    padding: 0 0 0 2.5rem;
   }
 .qualification__sections2 {
     grid-template-columns: 0.5fr;
