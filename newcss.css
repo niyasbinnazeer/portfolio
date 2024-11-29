@@ -7,21 +7,21 @@
 
 /*======= Colors =======*/
 /* Change Favorite color */
---hue-color: 240; /* Hue derived from #313160 */
+--hue-color: 240; /* Hue derived from #0005e6 */
 
 /*========= HEX Color mode =========*/
---first-color: #4d4d9c; /* Equivalent to hsl(240, 69%, 61%) */
---first-color-second: #4d4d9c; /* Same as --first-color */
---first-color-alt: #414184; /* Equivalent to hsl(240, 57%, 53%) */
---first-color-lighter: #c8c8eb; /* Equivalent to hsl(240, 92%, 85%) */
---title-color: #101020; /* Equivalent to hsl(240, 8%, 15%) */
---text-color: #56567a; /* Equivalent to hsl(240, 8%, 45%) */
---text-color-light: #9898b5; /* Equivalent to hsl(240, 8%, 65%) */
---input-color: #f2f2f9; /* Equivalent to hsl(240, 70%, 96%) */
+--first-color: #4d4df0; /* Equivalent to hsl(240, 69%, 61%) */
+--first-color-second: #4d4df0; /* Same as --first-color */
+--first-color-alt: #4141c4; /* Equivalent to hsl(240, 57%, 53%) */
+--first-color-lighter: #c8c8f9; /* Equivalent to hsl(240, 92%, 85%) */
+--title-color: #10101f; /* Equivalent to hsl(240, 8%, 15%) */
+--text-color: #56567b; /* Equivalent to hsl(240, 8%, 45%) */
+--text-color-light: #9898b6; /* Equivalent to hsl(240, 8%, 65%) */
+--input-color: #f2f2fa; /* Equivalent to hsl(240, 70%, 96%) */
 --body-color: #fcfcfd; /* Equivalent to hsl(240, 60%, 99%) */
 --container-color: #ffffff; /* Pure white */
---scroll-bar-color: #e4e4f1; /* Equivalent to hsl(240, 12%, 90%) */
---scroll-thumb-color: #cacade; /* Equivalent to hsl(240, 12%, 80%) */
+--scroll-bar-color: #e4e4f3; /* Equivalent to hsl(240, 12%, 90%) */
+--scroll-thumb-color: #cacadd; /* Equivalent to hsl(240, 12%, 80%) */
   
   /*========= Font and typography ===========*/
   --body-font: "Poppins", sans-serif;
