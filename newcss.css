@@ -5,23 +5,23 @@
 :root {
   --header-height: 3rem;
 
-  /*======= Colors =======*/
-  /* Change Favorite color */
-  --hue-color: 348; /* Hue derived from #323b93 */
+ /*======= Colors =======*/
+/* Change Favorite color */
+--hue-color: 348; /* Hue derived from #de0642 */
 
-  /*========= HSL Color mode =========*/
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #fff;
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+/*========= HEX Color mode =========*/
+--first-color: #f22d5f; /* Equivalent to hsl(348, 69%, 61%) */
+--first-color-second: #f22d5f; /* Same as --first-color */
+--first-color-alt: #c02751; /* Equivalent to hsl(348, 57%, 53%) */
+--first-color-lighter: #f9c6cf; /* Equivalent to hsl(348, 92%, 85%) */
+--title-color: #2e131c; /* Equivalent to hsl(348, 8%, 15%) */
+--text-color: #7d4c55; /* Equivalent to hsl(348, 8%, 45%) */
+--text-color-light: #bfa4aa; /* Equivalent to hsl(348, 8%, 65%) */
+--input-color: #fdeff1; /* Equivalent to hsl(348, 70%, 96%) */
+--body-color: #fff9fa; /* Equivalent to hsl(348, 60%, 99%) */
+--container-color: #ffffff; /* Pure white */
+--scroll-bar-color: #f0d9dc; /* Equivalent to hsl(348, 12%, 90%) */
+--scroll-thumb-color: #d8b4b9; /* Equivalent to hsl(348, 12%, 80%) */
 
   /*========= Font and typography ===========*/
   --body-font: "Poppins", sans-serif;
