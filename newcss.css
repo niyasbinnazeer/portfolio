@@ -916,29 +916,6 @@ img {
   bottom: 5rem;
 }
 
-/* Unvisited hyperlink (default state) */
-a:link {
-  color: #0005e6; /* Bright blue for hyperlinks */
-  text-decoration: none; /* Optional: Removes the underline */
-}
-
-/* Visited hyperlink */
-a:visited {
-  color: #4d4df0; /* Softer blue for visited links */
-  text-decoration: none; /* Optional: Removes the underline */
-}
-
-/* Hover effect for links */
-a:hover {
-  color: #c8c8f9; /* Light blue when hovered */
-  text-decoration: none; /* Optional: Adds underline for hover effect */
-}
-
-/* Active link (when clicked) */
-a:active {
-  color: #4141c4; /* Darker blue for active link */
-  text-decoration: none;
-}
 
 /*====================== Scroll Bar =====================*/
 
