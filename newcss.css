@@ -829,6 +829,30 @@ img {
   cursor: not-allowed;
 }
 
+/* Unvisited hyperlink (default state) */
+.contact__subtitle a:link {
+  color: #0005e6; /* Bright blue for hyperlinks */
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+/* Visited hyperlink */
+.contact__subtitle a:visited {
+  color: #4d4df0; /* Softer blue for visited links */
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+/* Hover effect for links */
+.contact__subtitle a:hover {
+  color: #c8c8f9; /* Light blue when hovered */
+  text-decoration: underline; /* Optional: Adds underline for hover effect */
+}
+
+/* Active link (when clicked) */
+.contact__subtitle a:active {
+  color: #4141c4; /* Darker blue for active link */
+  text-decoration: none;
+}
+
 /*=================== Footer ==================*/
 
 .footer {
