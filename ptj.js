@@ -177,3 +177,42 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+
+/*==================== FORM ====================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+  const sendButton = document.getElementById("sendButton");
+
+  // Function to validate form
+  const validateForm = () => {
+    const isNameValid = nameInput.value.trim() !== "";
+    const isEmailValid = emailInput.value.trim() !== "";
+    const isMessageValid = messageInput.value.trim() !== "";
+
+    // Enable button only if all fields are filled
+    sendButton.disabled = !(isNameValid && isEmailValid && isMessageValid);
+  };
+
+  // Add event listeners to input fields
+  [nameInput, emailInput, messageInput].forEach(input => {
+    input.addEventListener("input", validateForm);
+  });
+
+  // Handle form submission
+  form.addEventListener("submit", (event) => {
+    const subject = encodeURIComponent("New Contact Form Message");
+    const body = encodeURIComponent(
+      `Name: ${nameInput.value}\nEmail: ${emailInput.value}\nMessage: ${messageInput.value}`
+    );
+
+    const mailtoLink = `mailto:niyasbinnazeer@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+
+    event.preventDefault(); // Prevent default form submission
+  });
+});
