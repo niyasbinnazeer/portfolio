@@ -823,6 +823,12 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /*=================== Footer ==================*/
 
 .footer {
