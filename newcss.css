@@ -464,6 +464,7 @@ img {
 
 .skills__list {
   row-gap: 1.5rem;
+  padding-left: 10px;
 }
 
 .skills__titles {
