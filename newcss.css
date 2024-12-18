@@ -905,12 +905,6 @@ img {
   margin-top: var(--mb-3);
 }
 
-.visitor-counter {
-  font-size: var(--smaller-font-size);
-  text-align: center;
-  color: var(--text-color-light);
-  margin-top: var(--mb-3);
-}
 
 .footer__title,
 .footer__link,
@@ -1216,9 +1210,6 @@ img {
     margin-top: 4.5rem;
   }
 
-.visitor-counter {
-    margin-top: 4.5rem;
-  }
 }
 
 /* For large devices */
